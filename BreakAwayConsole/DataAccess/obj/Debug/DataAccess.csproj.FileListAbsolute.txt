@@ -1,0 +1,12 @@
+c:\users\long.tran\documents\visual studio 2013\Projects\BreakAwayConsole\DataAccess\bin\Debug\DataAccess.dll.config
+c:\users\long.tran\documents\visual studio 2013\Projects\BreakAwayConsole\DataAccess\bin\Debug\DataAccess.dll
+c:\users\long.tran\documents\visual studio 2013\Projects\BreakAwayConsole\DataAccess\bin\Debug\DataAccess.pdb
+c:\users\long.tran\documents\visual studio 2013\Projects\BreakAwayConsole\DataAccess\bin\Debug\EntityFramework.dll
+c:\users\long.tran\documents\visual studio 2013\Projects\BreakAwayConsole\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\long.tran\documents\visual studio 2013\Projects\BreakAwayConsole\DataAccess\bin\Debug\Model.dll
+c:\users\long.tran\documents\visual studio 2013\Projects\BreakAwayConsole\DataAccess\bin\Debug\Model.pdb
+c:\users\long.tran\documents\visual studio 2013\Projects\BreakAwayConsole\DataAccess\bin\Debug\EntityFramework.xml
+c:\users\long.tran\documents\visual studio 2013\Projects\BreakAwayConsole\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\long.tran\documents\visual studio 2013\Projects\BreakAwayConsole\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+c:\users\long.tran\documents\visual studio 2013\Projects\BreakAwayConsole\DataAccess\obj\Debug\DataAccess.dll
+c:\users\long.tran\documents\visual studio 2013\Projects\BreakAwayConsole\DataAccess\obj\Debug\DataAccess.pdb
