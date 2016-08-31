@@ -17,7 +17,8 @@ namespace BreakAwayConsole
             InsertDestination();
             InsertTrip();
             InsertPerson();
-            Console.ReadLine();
+            UpdateTrip();
+            //Console.ReadLine();
         }
 
         private static void InsertDestination()
@@ -64,6 +65,27 @@ namespace BreakAwayConsole
                 context.People.Add(person);
                 context.SaveChanges();
             }
+        }
+
+        private static void UpdateTrip()
+        {
+            using (var context = new BreakAwayContext())
+            {
+                //var logger = new MyLogger();
+                //context.Database.Log = s => logger.Log("EFApp", s);
+                context.Database.Log = Console.Write;
+                var trip = context.Trips.FirstOrDefault();
+                trip.CostUSD = 750;
+                context.SaveChanges();
+            }
+        }
+    }
+
+    public class MyLogger
+    {
+        public void Log(string component, string message)
+        {
+            Console.WriteLine("Component: {0} Message: {1} ", component, message);
         }
     }
 }

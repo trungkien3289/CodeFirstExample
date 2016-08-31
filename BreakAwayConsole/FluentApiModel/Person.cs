@@ -15,5 +15,15 @@ namespace FluentApiModel
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public byte[] RowVersion { get; set; }
+        public Address Address { get; set; }
+    }
+
+    public class Address
+    {
+        public int AddressId { get; set; }
+        public string StreetAddress { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string ZipCode { get; set; }
     }
 }
