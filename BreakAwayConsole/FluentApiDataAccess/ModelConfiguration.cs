@@ -17,6 +17,7 @@ namespace FluentApiDataAccess
             Property(d => d.Name).IsRequired();
             Property(d => d.Description).HasMaxLength(500);
             Property(d => d.Photo).HasColumnType("image");
+            HasMany(d => d.Lodgings).WithOptional(l => l.Destination);
         }
     }
 
@@ -46,6 +47,14 @@ namespace FluentApiDataAccess
             Property(p => p.SocialSecurityNumber).HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
             Property(t => t.RowVersion).IsRowVersion();
             Property(p => p.SocialSecurityNumber).IsConcurrencyToken();
+        }
+    }
+
+    public class InternetSpecialConfiguration : EntityTypeConfiguration<InternetSpecial>
+    {
+        public InternetSpecialConfiguration()
+        {
+            HasRequired(i => i.Accommodation).WithMany(l => l.InternetSpecials).HasForeignKey(i => i.AccommodationId);
         }
     }
 }

@@ -21,6 +21,7 @@ namespace FluentApiDataAccess
             modelBuilder.Configurations.Add(new DestinationCofiguration());
             modelBuilder.Configurations.Add(new LodgingConfiguration());
             modelBuilder.Configurations.Add(new TripConfiguration());
+            modelBuilder.Configurations.Add(new InternetSpecialConfiguration());
             modelBuilder.ComplexType<Address>();
         }
         public DbSet<Destination> Destinations { get; set; }

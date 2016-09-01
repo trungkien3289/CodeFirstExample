@@ -13,5 +13,6 @@ namespace FluentApiModel
         public string Owner { get; set; }
         public bool IsResort { get; set; }
         public Destination Destination { get; set; }
+        public List<InternetSpecial> InternetSpecials { get; set; }
     }
 }
