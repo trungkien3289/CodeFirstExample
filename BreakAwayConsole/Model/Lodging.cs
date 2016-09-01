@@ -17,5 +17,8 @@ namespace Model
         [Required]
         public Destination Destination { get; set; }
         public List<InternetSpecial> InternetSpecials { get; set; }
+
+        public Person PrimaryContact { get; set; }
+        public Person SecondaryContact { get; set; }
     }
 }

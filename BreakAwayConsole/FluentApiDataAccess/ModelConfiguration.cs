@@ -26,6 +26,8 @@ namespace FluentApiDataAccess
         public LodgingConfiguration()
         {
             Property(l => l.Name).IsRequired().HasMaxLength(200);
+            HasOptional(l => l.PrimaryContact).WithMany(p => p.PrimaryContactFor);
+            HasOptional(l => l.SecondaryContact).WithMany(p => p.SecondaryContactFor);
         }
     }
 
