@@ -17,7 +17,7 @@ namespace FluentApiDataAccess
             Property(d => d.Name).IsRequired();
             Property(d => d.Description).HasMaxLength(500);
             Property(d => d.Photo).HasColumnType("image");
-            HasMany(d => d.Lodgings).WithOptional(l => l.Destination);
+            HasMany(d => d.Lodgings).WithRequired(l => l.Destination).WillCascadeOnDelete(true);
         }
     }
 

@@ -17,5 +17,6 @@ namespace Model
         public decimal CostUSD { get; set; }
         [Timestamp]
         public byte[] RowVersion { get; set; }
+        public List<Activity> Activities { get; set; }
     }
 }
