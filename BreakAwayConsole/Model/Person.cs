@@ -8,24 +8,27 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    [Table("People")]
     public class Person
     {
         public Person()
         {
             Address = new Address();
+            Photo = new PersonPhoto();
         }
         [Key]
+        public int PersonId { get; set; }
         public int SocialSecurityNumber { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         [Timestamp]
         public byte[] RowVersion { get; set; }
         public Address  Address { get; set; }
-
+        [Required]
         public PersonPhoto Photo { get; set; }
 
-        public List<Lodging> PrimaryContactFor { get; set; }
-        public List<Lodging> SecondaryContactFor { get; set; }
+        //public List<Lodging> PrimaryContactFor { get; set; }
+        //public List<Lodging> SecondaryContactFor { get; set; }
     }
 
     [ComplexType]

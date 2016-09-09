@@ -8,14 +8,17 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    [Table("People")]
     public class PersonPhoto
     {
         [Key]
         [ForeignKey("PhotoOf")]
         public int PersonId { get; set; }
+        [Column(TypeName = "image")]
         public byte[] Photo { get; set; }
         public string Caption { get; set; }
 
+        //[Required]
         public Person PhotoOf { get; set; }
     }
 }
