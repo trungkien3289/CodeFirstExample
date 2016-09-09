@@ -17,6 +17,8 @@ namespace FluentApiModel
         public byte[] RowVersion { get; set; }
         public Address Address { get; set; }
 
+        public PersonPhoto Photo { get; set; }
+
         public List<Lodging> PrimaryContactFor { get; set; }
         public List<Lodging> SecondaryContactFor { get; set; }
     }

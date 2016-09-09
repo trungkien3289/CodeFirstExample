@@ -49,6 +49,15 @@ namespace FluentApiDataAccess
             Property(p => p.SocialSecurityNumber).HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
             Property(t => t.RowVersion).IsRowVersion();
             Property(p => p.SocialSecurityNumber).IsConcurrencyToken();
+            
+        }
+    }
+
+    public class PersonPhotoConfiguration : EntityTypeConfiguration<PersonPhoto>
+    {
+        public PersonPhotoConfiguration()
+        {
+            HasRequired(p => p.PhotoOf).WithRequiredDependent(p => p.Photo);
         }
     }
 
