@@ -48,9 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activity.cs" />
     <Compile Include="Destination.cs" />
-    <Compile Include="InternetSpecial.cs" />
     <Compile Include="Lodging.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
